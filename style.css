@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(320deg, #528cff,#a334ff,#eb92eb); /* Background Color page */
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent Background of the Calculator */
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background color for the screen.*/
+    border-radius: 55px;
+    font-size: 50px;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 25px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-color: black;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.calc-button {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background color for buttons */
+    border-color: black;
+    border-radius: 50px;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.calc-button:hover {
+    background-color: rgb(187, 16, 213); /* Button background color on hover when the mouse is located on a button */
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(35, 35, 35, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 355, 35, 0.1);
+    color: #fff;
+    background: #6d05ed;
+    border-color: black;
+}
+
+.calc-button:active{
+    background-color: #528cff;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}
